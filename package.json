@@ -1,0 +1,31 @@
+{
+  "name": "my-todos-app",
+  "version": "1.1.2",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.4",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.6",
+    "nodemon": "^2.0.12",
+    "querystring": "^0.2.1",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "Dinesh Rathod",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codewithdinesh/mytodosapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codewithdinesh/mytodosapp/issues"
+  },
+  "homepage": "https://github.com/codewithdinesh/mytodosapp#readme",
+  "description": "This is a Simple Todos APP built using nodejs and mongDB"
+}
