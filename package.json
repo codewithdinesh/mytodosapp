@@ -1,5 +1,5 @@
 {
-  "name": "my-todos-app",
+  "name": "UIDAI API",
   "version": "1.1.2",
   "main": "index.js",
   "dependencies": {
@@ -20,12 +20,7 @@
   "author": "Dinesh Rathod",
   "license": "ISC",
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/codewithdinesh/mytodosapp.git"
-  },
-  "bugs": {
-    "url": "https://github.com/codewithdinesh/mytodosapp/issues"
-  },
-  "homepage": "https://github.com/codewithdinesh/mytodosapp#readme",
-  "description": "This is a Simple Todos APP built using nodejs and mongDB"
+    "type": "git"
+  }
+  
 }

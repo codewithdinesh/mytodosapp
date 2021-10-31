@@ -4,22 +4,32 @@ const res = require('express/lib/response');
 const insertController = require('../controller/insert-controller');
 var router = express.Router();
 var db = require('../database')
-
-// var insertController = require('../controller/insert-controller');
-
-// router.get('/add-user', insertController.userForm);
-
-router.get('/', insertController.homePage);
-
-//Search Get Method
-router.get('/search', insertController.getData)
+const User=require('../model/model');
 
 
-//add new student descriptionheet
-router.get('/add', insertController.addUserPage)
+router.post('/sendApproverequest', function (req, res) {
+        
+
+    var userRequest = new User({
+        uid: req.body.uid,
+        landlord_uid: req.body.landlord_uid,
+        address_new: req.body.address_new
+    });
+    userRequest.save(userRequest)
+        .then(data => {
+            res.send(data);
+
+        })
+        .catch(err => {
+            res.status(500).send({
+                message:
+                    err.message || "Some error occurred while requesting address update."
+            });
+        });
 
 
-//add new student descriptionheet post data ,,data will added to db
-router.post('/create', insertController.addUser);
+});
+
+router.get('/ReviewApproveRequest',insertController.ReviewApproveRequest);
 
 module.exports = router;

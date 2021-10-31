@@ -2,7 +2,7 @@
 var mongoose = require('mongoose');
 
 
-const DB = 'mongodb+srv://dinesh:RathodDinesh@dinesh.nqph4.mongodb.net/todosApp?retryWrites=true&w=majority'
+const DB = 'mongodb+srv://dinesh:RathodDinesh@dinesh.nqph4.mongodb.net/UIDAIserver?retryWrites=true&w=majority'
 port = 3000;
 
 mongoose.connect(DB, { useUnifiedTopology: true });
